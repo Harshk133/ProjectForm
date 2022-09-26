@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><tt>JavaScript Form!</tt></h1>
+  <form action="https://httpbin.org/get" method="get" name="myForm" onsubmit="return(validate())" id="ProjectForm">
+
+    <br>
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" placeholder="First Name" autocomplete="on">
+    </div>
+
+    <br>
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="on">
+    </div>
+
+    <br>
+    <div>
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="phone" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number" autocomplete="on">
+    </div>
+
+    <br>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" placeholder="Address" autocomplete="on">
+    </div>
+
+    <br>
+    <div class="dont">
+      <label for="Gender">Gender</label>
+      <fieldset>
+        <div>
+          <input type="radio" name="gender" id="Male" value="Male">
+          <label for="Male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="Female" value="Female">
+          <label for="Female">Female</label>
+        </div>
+      </fieldset>
+    </div>
+
+    <br>
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" placeholder="example@gmail.com" autocomplete="on">
+    </div>
+
+    <br>
+    <div class="choice">
+      <label for="Choice">Choice</label>
+      <div class="flex">
+        Programmer: <input type="checkbox" name="programming" id="programming" style="width: 125px;">
+      </div>
+      <div class="flex">
+        Coder: <input type="checkbox" name="coding" id="coding" style="width: 235px;">
+      </div>
+      <div class="flex">
+        Tester: <input type="checkbox" name="testing" id="testing" style="width:230px">
+      </div>
+    </div>
+
+    <br>
+    <div>
+      <label for="list">List:</label>
+      <!-- <input type="text" name="list" id="list" placeholder="email@gmail.com" autocomplete="on" required > -->
+      <select name="list" id="list" style="width: 30%;">
+        <option value="-1" selected>[Choose Yours!]</option>
+        <option value="1">Student</option>
+        <option value="2">Teacher</option>
+        <option value="3">Faculty</option>
+      </select>
+    </div>
+
+    <br><br>
+    <div class="btn">
+      <button type="submit" class="green">Submit</button>
+      <button type="reset" class="red">Cancel</button>
+    </div>
+  </form>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="index.js"></script>
+<script src="db.js"></script>
+</html>

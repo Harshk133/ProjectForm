@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Roboto:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 10px 15px;
+}
+
+form{
+    margin: 0 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+form label{
+    font-weight: bold;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    outline: none;
+}
+
+form select{
+    border: 1px solid salmon;
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+}
+
+.dont div{
+    display: flex;
+}
+
+.dont input{
+    width: 30px;
+}
+
+fieldset{
+    width: 77%;
+    border: none;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.green{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: greenyellow;
+    box-shadow: 2px 2px 4px black
+}
+
+.red{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(252, 144, 144);
+    box-shadow: 2px 2px 4px black
+}
+
+.choice{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    form{
+        margin: 0 10px;
+    }
+}
